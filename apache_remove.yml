@@ -1,0 +1,10 @@
+---
+- name: Apache Remove
+  hosts: all
+
+  tasks:
+  - name: Remove Apache
+    yum:
+      name: httpd
+      state: removed
+
