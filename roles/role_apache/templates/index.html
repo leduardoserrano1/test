@@ -14,9 +14,15 @@
 
         .header {
             font-size: 150px;
-            margin-top: 350px;
+            margin-top: 250px;
             font-family: 'Overpass';
             font-weight: 100;
+        }
+
+        .text {
+            font-size: 150px;
+            font-family: 'Overpass';
+            font-weight: 50;
         }
 
         .logo {
@@ -28,13 +34,22 @@
     </style>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Demon Ansible Tower</title>
+    <title>Demonstração Ansible Tower</title>
 </head>
 
 <body>
+ <img class="logo" src="https://www.zebrac.com/zePortal/WebFiles/ZEBRA/Logo-RedHat-Hat-Color-RGB.png">
     <div class="header">
-        Demo Ansible Tower
+        Ansible Tower
 	{{ first_line }}
+	{{ second_line }}
+    </div>
+
+    <div class="text">
+	{{ first_line }}
+    </div>
+
+    <div class="text">
 	{{ second_line }}
     </div>
 
