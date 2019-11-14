@@ -1,12 +1,5 @@
 ---
-- name: Ensure proper Apache configuration
-  copy:
-    src: httpd.conf
-    dest: /etc/httpd/conf/httpd.conf
-  notify: apache-restart
-
-- name: deploy index.html
-  template:
-    src: index.html.j2
-    dest: /var/www/html/index.html
-  notify: apache-restart
+- name: apache-restart
+  service:
+    name: httpd
+    state: restarted
