@@ -1,6 +1,6 @@
 
 - name: install apache and firewall
-  hosts: all
+  hosts: node1, node2, node3
   become: true
 
   tasks:
