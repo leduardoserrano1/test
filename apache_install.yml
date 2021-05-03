@@ -1,6 +1,6 @@
------
-- name: Apache server installed
-  hosts: all
+---
+- name: gather debug info
+  hosts: "{{ HOSTS | default('web') }}"
   become: true
   
 tasks:
