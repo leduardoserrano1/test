@@ -1,6 +1,10 @@
-- name: Ensure the httpd service is running
+- name: Apache server installed
+  hosts: all
   become: true
-  become_method: sudo
-  service:
-    name: httpd
-    state: started
+
+  tasks:
+  - name: latest Apache version installed
+    yum:
+      name: httpd
+      state: latest
+      
