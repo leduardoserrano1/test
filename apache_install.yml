@@ -1,5 +1,5 @@
 
-- name: apply non-kernel updates
+- name: install apache and firewall
   hosts: all
   become: true
 
