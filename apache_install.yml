@@ -1,5 +1,6 @@
 - name: Ensure the httpd service is running
+  become: true
+  become_method: sudo
   service:
     name: httpd
     state: started
-  become: true
