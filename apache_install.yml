@@ -1,4 +1,9 @@
 - name: Apache server installed
   hosts: all
   become: true
-      
+
+  tasks:
+  - name: latest Apache version installed
+    yum:
+      name: httpd
+      state: latest
