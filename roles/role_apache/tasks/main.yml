@@ -5,12 +5,6 @@
     enabled: true
     state: started
 
-- name: Ensure proper Apache configuration
-  copy:
-    src: httpd.conf
-    dest: /etc/httpd/conf/httpd.conf
-  notify: apache-restart
-
 - name: deploy index.html
   template:
     src: index.html
