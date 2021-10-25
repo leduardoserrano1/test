@@ -5,8 +5,3 @@
     enabled: true
     state: started
 
-- name: deploy index.html
-  template:
-    src: index.html
-    dest: /var/www/html/index.html
-  notify: apache-restart
