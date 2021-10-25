@@ -1,7 +1,7 @@
 ---
 - name: Apache Remove
   hosts: node1, node2, node3
-  begin: true
+  become: true
 
   tasks:
   - name: Remove Apache
