@@ -14,7 +14,7 @@
       name: firewalld
       state: latest
 
-  - name: firewalld enabled and running
+  - name: firewalld enabled and running fine
     service:
       name: firewalld
       enabled: true
