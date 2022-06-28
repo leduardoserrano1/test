@@ -1,1 +1,1 @@
-# Ingram Micro - Ansible Tower demonstration. Apache Servers configuration.
+# Ingram Micro - Ansible Controller demonstration. Configuration of 03 apache servers.
