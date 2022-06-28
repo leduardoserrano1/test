@@ -1,5 +1,5 @@
 
-- name: install apache and firewalll
+- name: install apache and firewall
   hosts: node1, node2, node3
   become: true
 
