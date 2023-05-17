@@ -1,5 +1,5 @@
 ---
-- name: Apache Remove
+- name: Apache Remover
   hosts: node1, node2, node3
   become: true
 
